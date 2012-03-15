@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FCDBF8115119D910053BD75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCDBF8015119D910053BD75 /* UIKit.framework */; };
+		9FCDBF8315119D910053BD75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCDBF8215119D910053BD75 /* Foundation.framework */; };
+		9FCDBF8515119D910053BD75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCDBF8415119D910053BD75 /* CoreGraphics.framework */; };
+		9FCDBF8B15119D910053BD75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FCDBF8915119D910053BD75 /* InfoPlist.strings */; };
+		9FCDBF8D15119D910053BD75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDBF8C15119D910053BD75 /* main.m */; };
+		9FCDBF9115119D910053BD75 /* QAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDBF9015119D910053BD75 /* QAppDelegate.m */; };
+		9FCDBF9415119D910053BD75 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCDBF9215119D910053BD75 /* MainStoryboard.storyboard */; };
+		9FCDBF9715119D910053BD75 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDBF9615119D910053BD75 /* QViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9FCDBF7C15119D910053BD75 /* MosaicTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosaicTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCDBF8015119D910053BD75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9FCDBF8215119D910053BD75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9FCDBF8415119D910053BD75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9FCDBF8815119D910053BD75 /* MosaicTransition-Info.plist */ = {isa = PBXFileReference; path = "MosaicTransition-Info.plist"; sourceTree = "<group>"; };
+		9FCDBF8A15119D910053BD75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FCDBF8C15119D910053BD75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FCDBF8E15119D910053BD75 /* MosaicTransition-Prefix.pch */ = {isa = PBXFileReference; path = "MosaicTransition-Prefix.pch"; sourceTree = "<group>"; };
+		9FCDBF8F15119D910053BD75 /* QAppDelegate.h */ = {isa = PBXFileReference; path = QAppDelegate.h; sourceTree = "<group>"; };
+		9FCDBF9015119D910053BD75 /* QAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAppDelegate.m; sourceTree = "<group>"; };
+		9FCDBF9315119D910053BD75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9FCDBF9515119D910053BD75 /* QViewController.h */ = {isa = PBXFileReference; path = QViewController.h; sourceTree = "<group>"; };
+		9FCDBF9615119D910053BD75 /* QViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FCDBF7915119D910053BD75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCDBF8115119D910053BD75 /* UIKit.framework in Frameworks */,
+				9FCDBF8315119D910053BD75 /* Foundation.framework in Frameworks */,
+				9FCDBF8515119D910053BD75 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FCDBF7115119D900053BD75 = {
+			isa = PBXGroup;
+			children = (
+				9FCDBF8615119D910053BD75 /* MosaicTransition */,
+				9FCDBF7F15119D910053BD75 /* Frameworks */,
+				9FCDBF7D15119D910053BD75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FCDBF7D15119D910053BD75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FCDBF7C15119D910053BD75 /* MosaicTransition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FCDBF7F15119D910053BD75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FCDBF8015119D910053BD75 /* UIKit.framework */,
+				9FCDBF8215119D910053BD75 /* Foundation.framework */,
+				9FCDBF8415119D910053BD75 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FCDBF8615119D910053BD75 /* MosaicTransition */ = {
+			isa = PBXGroup;
+			children = (
+				9FCDBF8F15119D910053BD75 /* QAppDelegate.h */,
+				9FCDBF9015119D910053BD75 /* QAppDelegate.m */,
+				9FCDBF9215119D910053BD75 /* MainStoryboard.storyboard */,
+				9FCDBF9515119D910053BD75 /* QViewController.h */,
+				9FCDBF9615119D910053BD75 /* QViewController.m */,
+				9FCDBF8715119D910053BD75 /* Supporting Files */,
+			);
+			path = MosaicTransition;
+			sourceTree = "<group>";
+		};
+		9FCDBF8715119D910053BD75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FCDBF8815119D910053BD75 /* MosaicTransition-Info.plist */,
+				9FCDBF8915119D910053BD75 /* InfoPlist.strings */,
+				9FCDBF8C15119D910053BD75 /* main.m */,
+				9FCDBF8E15119D910053BD75 /* MosaicTransition-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FCDBF7B15119D910053BD75 /* MosaicTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCDBF9A15119D910053BD75 /* Build configuration list for PBXNativeTarget "MosaicTransition" */;
+			buildPhases = (
+				9FCDBF7815119D910053BD75 /* Sources */,
+				9FCDBF7915119D910053BD75 /* Frameworks */,
+				9FCDBF7A15119D910053BD75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MosaicTransition;
+			productName = MosaicTransition;
+			productReference = 9FCDBF7C15119D910053BD75 /* MosaicTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FCDBF7315119D900053BD75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Quaddro;
+			};
+			buildConfigurationList = 9FCDBF7615119D900053BD75 /* Build configuration list for PBXProject "MosaicTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9FCDBF7115119D900053BD75;
+			productRefGroup = 9FCDBF7D15119D910053BD75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FCDBF7B15119D910053BD75 /* MosaicTransition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FCDBF7A15119D910053BD75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCDBF8B15119D910053BD75 /* InfoPlist.strings in Resources */,
+				9FCDBF9415119D910053BD75 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FCDBF7815119D910053BD75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCDBF8D15119D910053BD75 /* main.m in Sources */,
+				9FCDBF9115119D910053BD75 /* QAppDelegate.m in Sources */,
+				9FCDBF9715119D910053BD75 /* QViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9FCDBF8915119D910053BD75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FCDBF8A15119D910053BD75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9FCDBF9215119D910053BD75 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FCDBF9315119D910053BD75 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FCDBF9815119D910053BD75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9FCDBF9915119D910053BD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FCDBF9B15119D910053BD75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MosaicTransition/MosaicTransition-Prefix.pch";
+				INFOPLIST_FILE = "MosaicTransition/MosaicTransition-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9FCDBF9C15119D910053BD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MosaicTransition/MosaicTransition-Prefix.pch";
+				INFOPLIST_FILE = "MosaicTransition/MosaicTransition-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FCDBF7615119D900053BD75 /* Build configuration list for PBXProject "MosaicTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCDBF9815119D910053BD75 /* Debug */,
+				9FCDBF9915119D910053BD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCDBF9A15119D910053BD75 /* Build configuration list for PBXNativeTarget "MosaicTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCDBF9B15119D910053BD75 /* Debug */,
+				9FCDBF9C15119D910053BD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FCDBF7315119D900053BD75 /* Project object */;
+}
