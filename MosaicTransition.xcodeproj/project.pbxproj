@@ -15,6 +15,11 @@
 		9FCDBF9115119D910053BD75 /* QAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDBF9015119D910053BD75 /* QAppDelegate.m */; };
 		9FCDBF9415119D910053BD75 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCDBF9215119D910053BD75 /* MainStoryboard.storyboard */; };
 		9FCDBF9715119D910053BD75 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDBF9615119D910053BD75 /* QViewController.m */; };
+		9FCDBF9E15119E560053BD75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCDBF9D15119E560053BD75 /* QuartzCore.framework */; };
+		9FCDBFA01511A02F0053BD75 /* Screen Shot 2012-03-15 at 12.57.10 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCDBF9F1511A02F0053BD75 /* Screen Shot 2012-03-15 at 12.57.10 AM.png */; };
+		9FCDBFA21511A0540053BD75 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCDBFA11511A0540053BD75 /* bg.png */; };
+		9FCDBFA51511AF360053BD75 /* NSArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDBFA41511AF360053BD75 /* NSArray+Shuffle.m */; };
+		9FCDBFA71511B3A50053BD75 /* goldengate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FCDBFA61511B3A50053BD75 /* goldengate.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +27,21 @@
 		9FCDBF8015119D910053BD75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9FCDBF8215119D910053BD75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9FCDBF8415119D910053BD75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9FCDBF8815119D910053BD75 /* MosaicTransition-Info.plist */ = {isa = PBXFileReference; path = "MosaicTransition-Info.plist"; sourceTree = "<group>"; };
+		9FCDBF8815119D910053BD75 /* MosaicTransition-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MosaicTransition-Info.plist"; sourceTree = "<group>"; };
 		9FCDBF8A15119D910053BD75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9FCDBF8C15119D910053BD75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9FCDBF8E15119D910053BD75 /* MosaicTransition-Prefix.pch */ = {isa = PBXFileReference; path = "MosaicTransition-Prefix.pch"; sourceTree = "<group>"; };
-		9FCDBF8F15119D910053BD75 /* QAppDelegate.h */ = {isa = PBXFileReference; path = QAppDelegate.h; sourceTree = "<group>"; };
+		9FCDBF8E15119D910053BD75 /* MosaicTransition-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MosaicTransition-Prefix.pch"; sourceTree = "<group>"; };
+		9FCDBF8F15119D910053BD75 /* QAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAppDelegate.h; sourceTree = "<group>"; };
 		9FCDBF9015119D910053BD75 /* QAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAppDelegate.m; sourceTree = "<group>"; };
 		9FCDBF9315119D910053BD75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9FCDBF9515119D910053BD75 /* QViewController.h */ = {isa = PBXFileReference; path = QViewController.h; sourceTree = "<group>"; };
+		9FCDBF9515119D910053BD75 /* QViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QViewController.h; sourceTree = "<group>"; };
 		9FCDBF9615119D910053BD75 /* QViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
+		9FCDBF9D15119E560053BD75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9FCDBF9F1511A02F0053BD75 /* Screen Shot 2012-03-15 at 12.57.10 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2012-03-15 at 12.57.10 AM.png"; sourceTree = "<group>"; };
+		9FCDBFA11511A0540053BD75 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		9FCDBFA31511AF360053BD75 /* NSArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Shuffle.h"; sourceTree = "<group>"; };
+		9FCDBFA41511AF360053BD75 /* NSArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Shuffle.m"; sourceTree = "<group>"; };
+		9FCDBFA61511B3A50053BD75 /* goldengate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goldengate.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCDBF9E15119E560053BD75 /* QuartzCore.framework in Frameworks */,
 				9FCDBF8115119D910053BD75 /* UIKit.framework in Frameworks */,
 				9FCDBF8315119D910053BD75 /* Foundation.framework in Frameworks */,
 				9FCDBF8515119D910053BD75 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +62,10 @@
 		9FCDBF7115119D900053BD75 = {
 			isa = PBXGroup;
 			children = (
+				9FCDBFA61511B3A50053BD75 /* goldengate.jpg */,
+				9FCDBFA11511A0540053BD75 /* bg.png */,
+				9FCDBF9F1511A02F0053BD75 /* Screen Shot 2012-03-15 at 12.57.10 AM.png */,
+				9FCDBF9D15119E560053BD75 /* QuartzCore.framework */,
 				9FCDBF8615119D910053BD75 /* MosaicTransition */,
 				9FCDBF7F15119D910053BD75 /* Frameworks */,
 				9FCDBF7D15119D910053BD75 /* Products */,
@@ -77,11 +93,13 @@
 		9FCDBF8615119D910053BD75 /* MosaicTransition */ = {
 			isa = PBXGroup;
 			children = (
+				9FCDBF9215119D910053BD75 /* MainStoryboard.storyboard */,
 				9FCDBF8F15119D910053BD75 /* QAppDelegate.h */,
 				9FCDBF9015119D910053BD75 /* QAppDelegate.m */,
-				9FCDBF9215119D910053BD75 /* MainStoryboard.storyboard */,
 				9FCDBF9515119D910053BD75 /* QViewController.h */,
 				9FCDBF9615119D910053BD75 /* QViewController.m */,
+				9FCDBFA31511AF360053BD75 /* NSArray+Shuffle.h */,
+				9FCDBFA41511AF360053BD75 /* NSArray+Shuffle.m */,
 				9FCDBF8715119D910053BD75 /* Supporting Files */,
 			);
 			path = MosaicTransition;
@@ -151,6 +169,9 @@
 			files = (
 				9FCDBF8B15119D910053BD75 /* InfoPlist.strings in Resources */,
 				9FCDBF9415119D910053BD75 /* MainStoryboard.storyboard in Resources */,
+				9FCDBFA01511A02F0053BD75 /* Screen Shot 2012-03-15 at 12.57.10 AM.png in Resources */,
+				9FCDBFA21511A0540053BD75 /* bg.png in Resources */,
+				9FCDBFA71511B3A50053BD75 /* goldengate.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +185,7 @@
 				9FCDBF8D15119D910053BD75 /* main.m in Sources */,
 				9FCDBF9115119D910053BD75 /* QAppDelegate.m in Sources */,
 				9FCDBF9715119D910053BD75 /* QViewController.m in Sources */,
+				9FCDBFA51511AF360053BD75 /* NSArray+Shuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

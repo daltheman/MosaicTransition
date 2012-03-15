@@ -6,7 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "NSArray+Shuffle.h"
 
 @interface QViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+@property (strong, nonatomic) NSMutableArray *positions;
+
+- (IBAction)generate:(id)sender;
+-(void)panGesture:(UIPanGestureRecognizer *)pan;
+-(IBAction)animate;
 @end
