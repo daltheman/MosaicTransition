@@ -9,7 +9,10 @@
 #import <QuartzCore/QuartzCore.h>
 #import "NSArray+Shuffle.h"
 
-@interface QViewController : UIViewController
+@interface QViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate> {
+    UIImagePickerController *pickerController;
+    UIImageView *tempImageView;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
 @property (strong, nonatomic) NSMutableArray *positions;
@@ -17,4 +20,5 @@
 - (IBAction)generate:(id)sender;
 -(void)panGesture:(UIPanGestureRecognizer *)pan;
 -(IBAction)animate;
+-(IBAction)selectImage;
 @end

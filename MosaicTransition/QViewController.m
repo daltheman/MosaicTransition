@@ -25,9 +25,44 @@
     [pan setTranslation:CGPointZero inView:self.view];
 }
 
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    tempImageView = [[UIImageView alloc] initWithImage:[info objectForKey:UIImagePickerControllerOriginalImage]];
+    tempImageView.frame = self.view.frame;
+    tempImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:tempImageView];
+    [picker dismissModalViewControllerAnimated:YES];
+    [self generate:self];
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissModalViewControllerAnimated:YES];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    switch (buttonIndex) {
+        case 0:
+            pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            break;
+        case 1:
+            pickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+            break;
+        case 2:
+            pickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            break;
+        default:
+            break;
+    }
+    [self presentModalViewController:pickerController animated:YES];
+}
+
+-(IBAction)selectImage {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Selecione:" delegate:self cancelButtonTitle:@"Cancelar" destructiveButtonTitle:nil otherButtonTitles:@"Camera", @"Albuns", @"Biblioteca", nil];
+    [actionSheet showInView:self.view];
+}
+
 - (IBAction)generate:(id)sender {
-    float width = mainImageView.frame.size.width / LINES;
-    float height = mainImageView.frame.size.height / COLUMNS;
+    float width = tempImageView.frame.size.width / LINES;
+    float height = tempImageView.frame.size.height / COLUMNS;
     
     float startPosX = 0.0;
     float startPosY = 0.0;
@@ -37,7 +72,8 @@
     [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    mainImageView.image = image;
+//    mainImageView.image = image;
+    tempImageView.image = image;
     
     int tag = 1;
     for (int line = 1; line <= LINES; line++) {
@@ -66,7 +102,7 @@
         startPosY += height;
         tag++;
     }
-    [mainImageView removeFromSuperview];
+    [tempImageView removeFromSuperview];
 }
 
 #pragma mark - View lifecycle
@@ -74,19 +110,21 @@
 -(IBAction)animate {
     NSArray *newPositions = [NSArray arrayWithArray:[positions shuffle]];
     [self.view.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[UIImageView class]]) {
-            [UIView animateWithDuration:0.25 animations:^{
-                UIImageView *imageView = (UIImageView *)obj;
-                NSValue *positionValue = [newPositions objectAtIndex:idx];
-                CGPoint newPosition = [positionValue CGPointValue];
-                imageView.center = CGPointMake(newPosition.x + 23, newPosition.y + 30);
-            }];
+        if ([obj isKindOfClass:[UIImageView class]] ) {
+                [UIView animateWithDuration:0.25 animations:^{
+                    UIImageView *imageView = (UIImageView *)obj;
+                    NSValue *positionValue = [newPositions objectAtIndex:idx];
+                    CGPoint newPosition = [positionValue CGPointValue];
+                    imageView.center = CGPointMake(newPosition.x + 23, newPosition.y + 30);
+                }];
         } 
     }];
 }
 
 - (void)viewDidLoad {
     positions = [NSMutableArray arrayWithCapacity:(LINES * COLUMNS)];
+    pickerController = [[UIImagePickerController alloc] init];
+    pickerController.delegate = self;
     [super viewDidLoad];
 }
 

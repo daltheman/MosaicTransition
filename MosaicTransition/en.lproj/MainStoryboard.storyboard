@@ -12,12 +12,6 @@
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="goldengate.jpg" id="pC4-a6-VCV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="0.2231906263" green="0.2314225855" blue="0.25611846300000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="grZ-Nd-jnq">
@@ -26,15 +20,12 @@
                                 <action selector="animate" destination="2" id="rEo-5D-ynF"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Mosaico" id="UBQ-C3-Dvi">
+                        <barButtonItem key="rightBarButtonItem" title="Selecionar" id="UBQ-C3-Dvi">
                             <connections>
-                                <action selector="generate:" destination="2" id="nqJ-KD-dNc"/>
+                                <action selector="selectImage" destination="2" id="Zc4-T6-aIH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="mainImageView" destination="pC4-a6-VCV" id="Nn3-th-dje"/>
-                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="485" y="52"/>
@@ -58,19 +49,6 @@
             <point key="canvasLocation" x="99" y="52"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="goldengate.jpg" width="320" height="480"/>
-    </resources>
-    <classes>
-        <class className="QViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="animate"/>
-                <relationship kind="action" name="generate:"/>
-                <relationship kind="outlet" name="mainImageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
